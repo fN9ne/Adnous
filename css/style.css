@@ -111,12 +111,15 @@ h6 {
 
 body {
   font-family: 'Open Sans';
+  position: relative;
 }
 
 .header {
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 1, 0.15);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 1, 0.15);
+  position: relative;
+  z-index: 2;
 }
 
 .header__container {
@@ -286,9 +289,154 @@ body {
   z-index: 100;
 }
 
+.sidebar {
+  background: #2D3750;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-top: 33px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.sidebar._active {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar__container {
+  padding-top: 75px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__item {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 17px 0;
+  cursor: pointer;
+}
+
+.sidebar__content {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  background: #16AFE4;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar__content._active {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar__row {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 290px;
+  padding: 0px 0px 0px 43px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.sidebar__icon {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.sidebar__icon.fa-chevron-down {
+  margin-left: 15px;
+  font-size: 12px;
+  margin-right: 0;
+}
+
+.sidebar span {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 16px;
+}
+
+.item-sidebar__icon {
+  font-size: 20px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #fff;
+}
+
 @media (min-width: 661px) {
   .tablet-header {
     display: none;
+  }
+}
+
+@media (min-width: 993px) {
+  .sidebar__item:hover {
+    border-left: 3px solid #16afe4;
+    background: #404960;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+
+  .sidebar__item:hover .item-sidebar__icon {
+    color: #00A0D7;
+    padding-right: 3px;
+  }
+
+  .sidebar__item:hover .sidebar__content {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sidebar__row:hover {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    background: #2CB5E5;
+    border-left: 3px solid #fff;
+  }
+
+  .sidebar__select:hover {
+    background: none;
+    border-left: 0;
   }
 }
 
@@ -368,6 +516,10 @@ body {
     margin-right: 0px;
     margin-bottom: 10px;
   }
+
+  .sidebar__container {
+    padding-top: 130px;
+  }
 }
 
 @media (max-width: 660px) {
@@ -384,13 +536,10 @@ body {
             align-items: center;
     background: #2D3750;
     padding: 30px 20px;
-    height: 100vh;
+    height: 230px;
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-            transform: translateX(50%);
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     transition: 0.3s all ease;
@@ -400,9 +549,6 @@ body {
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    -webkit-transform: translate(0);
-        -ms-transform: translate(0);
-            transform: translate(0);
     opacity: 1;
     visibility: visible;
   }
@@ -434,5 +580,17 @@ body {
 
   .header__user {
     color: #fff;
+  }
+
+  .sidebar {
+    width: 80px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 380px) {
+  .sidebar__row {
+    width: 240px;
   }
 }

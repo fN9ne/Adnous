@@ -25,4 +25,44 @@ $(document).ready(function(){
 	$('.tablet-header').click(function(){
 		$('.header__body').toggleClass('_active')
 	})
+	//
+	$('.header__burger').click(function(){
+		$('.sidebar').toggleClass('_active');
+	})
+	//
+	$('.sidebar__item_1').click(function(){
+		$('.sidebar__content_1').toggleClass('_active')
+		$('.sidebar__content_2').removeClass('_active')
+		$('.sidebar__content_3').removeClass('_active')
+		$('.sidebar__content_4').removeClass('_active')
+		$('.sidebar__content_5').removeClass('_active')
+	})
+	$('.sidebar__item_2').click(function(){
+		$('.sidebar__content_1').removeClass('_active')
+		$('.sidebar__content_2').toggleClass('_active')
+		$('.sidebar__content_3').removeClass('_active')
+		$('.sidebar__content_4').removeClass('_active')
+		$('.sidebar__content_5').removeClass('_active')
+	})
+	$('.sidebar__item_3').click(function(){
+		$('.sidebar__content_1').removeClass('_active')
+		$('.sidebar__content_2').removeClass('_active')
+		$('.sidebar__content_3').toggleClass('_active')
+		$('.sidebar__content_4').removeClass('_active')
+		$('.sidebar__content_5').removeClass('_active')
+	})
+	$('.sidebar__item_4').click(function(){
+		$('.sidebar__content_1').removeClass('_active')
+		$('.sidebar__content_2').removeClass('_active')
+		$('.sidebar__content_3').removeClass('_active')
+		$('.sidebar__content_4').toggleClass('_active')
+		$('.sidebar__content_5').removeClass('_active')
+	})
+	$('.sidebar__item_5').click(function(){
+		$('.sidebar__content_1').removeClass('_active')
+		$('.sidebar__content_2').removeClass('_active')
+		$('.sidebar__content_3').removeClass('_active')
+		$('.sidebar__content_4').removeClass('_active')
+		$('.sidebar__content_5').toggleClass('_active')
+	})
 })

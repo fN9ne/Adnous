@@ -28,7 +28,7 @@ $(document).ready(function(){
 	//
 	$('.header__burger').click(function(){
 		$('.sidebar').toggleClass('_active');
-		$('.page').toggleClass('_active');
+		$('.menu-page').toggleClass('_active');
 	})
 	//
 	$('.sidebar__item_1').click(function(){
@@ -66,4 +66,5 @@ $(document).ready(function(){
 		$('.sidebar__content_4').removeClass('_active')
 		$('.sidebar__content_5').toggleClass('_active')
 	})
+	//
 })

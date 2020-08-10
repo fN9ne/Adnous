@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'ALS Rubl';
+  font-style: normal;
+  font-weight: normal;
+  src: local("ALS Rubl"), url("../fonts/rouble.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -104,7 +111,8 @@ h6 {
 }
 
 ._rub:after {
-  content: '\20BD';
+  content: 'e';
+  font-family: 'ALS Rubl';
   display: inline-block;
   margin-left: 4.4px;
 }

@@ -23,12 +23,24 @@ function ibg(){
 ibg();
 $(document).ready(function(){
 	$('.tablet-header').click(function(){
-		$('.header__body').toggleClass('_active')
+		$('.menu-page').toggleClass('_active')
+	})
+	$('.category__item').click(function(){
+		$('.menu-page').removeClass('_active')
+	})
+	//
+	$('.category__title_1').click(function(){
+		$('.category__box_1').toggleClass('_active')
+	})
+	$('.category__title_2').click(function(){
+		$('.category__box_2').toggleClass('_active')
+	})
+	$('.category__title_3').click(function(){
+		$('.category__box_3').toggleClass('_active')
 	})
 	//
 	$('.header__burger').click(function(){
 		$('.sidebar').toggleClass('_active');
-		$('.menu-page').toggleClass('_active');
 	})
 	//
 	$('.sidebar__item_1').click(function(){
@@ -37,6 +49,7 @@ $(document).ready(function(){
 		$('.sidebar__content_3').removeClass('_active')
 		$('.sidebar__content_4').removeClass('_active')
 		$('.sidebar__content_5').removeClass('_active')
+		$('.sidebar__content_6').removeClass('_active')
 	})
 	$('.sidebar__item_2').click(function(){
 		$('.sidebar__content_1').removeClass('_active')
@@ -44,6 +57,7 @@ $(document).ready(function(){
 		$('.sidebar__content_3').removeClass('_active')
 		$('.sidebar__content_4').removeClass('_active')
 		$('.sidebar__content_5').removeClass('_active')
+		$('.sidebar__content_6').removeClass('_active')
 	})
 	$('.sidebar__item_3').click(function(){
 		$('.sidebar__content_1').removeClass('_active')
@@ -51,6 +65,7 @@ $(document).ready(function(){
 		$('.sidebar__content_3').toggleClass('_active')
 		$('.sidebar__content_4').removeClass('_active')
 		$('.sidebar__content_5').removeClass('_active')
+		$('.sidebar__content_6').removeClass('_active')
 	})
 	$('.sidebar__item_4').click(function(){
 		$('.sidebar__content_1').removeClass('_active')
@@ -58,6 +73,7 @@ $(document).ready(function(){
 		$('.sidebar__content_3').removeClass('_active')
 		$('.sidebar__content_4').toggleClass('_active')
 		$('.sidebar__content_5').removeClass('_active')
+		$('.sidebar__content_6').removeClass('_active')
 	})
 	$('.sidebar__item_5').click(function(){
 		$('.sidebar__content_1').removeClass('_active')
@@ -65,6 +81,15 @@ $(document).ready(function(){
 		$('.sidebar__content_3').removeClass('_active')
 		$('.sidebar__content_4').removeClass('_active')
 		$('.sidebar__content_5').toggleClass('_active')
+		$('.sidebar__content_6').removeClass('_active')
+	})
+	$('.sidebar__item_6').click(function(){
+		$('.sidebar__content_1').removeClass('_active')
+		$('.sidebar__content_2').removeClass('_active')
+		$('.sidebar__content_3').removeClass('_active')
+		$('.sidebar__content_4').removeClass('_active')
+		$('.sidebar__content_5').removeClass('_active')
+		$('.sidebar__content_6').toggleClass('_active')
 	})
 	//
 	$('.wh00').mouseover(function(){$('.hour00').addClass('_hovered')})
@@ -115,4 +140,5 @@ $(document).ready(function(){
 	$('.wh21').mouseleave(function(){$('.hour21').removeClass('_hovered')})
 	$('.wh22').mouseleave(function(){$('.hour22').removeClass('_hovered')})
 	$('.wh23').mouseleave(function(){$('.hour23').removeClass('_hovered')})
+	//
 })

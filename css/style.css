@@ -300,7 +300,7 @@ body {
 .sidebar {
   background: #2D3750;
   width: 100px;
-  height: 100%;
+  height: 2000px;
   position: absolute;
   top: 0;
   left: 0;
@@ -406,6 +406,185 @@ body {
   color: #fff;
 }
 
+.menu-page {
+  width: 290px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+
+.menu-page__content._active {
+  position: relative;
+}
+
+.menu-page__content._active:after {
+  content: '';
+  width: 168px;
+  height: 5px;
+  position: absolute;
+  background: #16afe4;
+  bottom: -2.5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.menu-page__content._active .category__title {
+  color: #000;
+}
+
+.menu-page__content._active .category__item {
+  color: #000;
+}
+
+.menu-page__content._active .category__item:hover {
+  font-weight: 600;
+  color: #0066c0;
+}
+
+.menu-page__content._active .category__item:before,
+.menu-page__content._active .category__item:after {
+  background: #000;
+}
+
+.category {
+  padding: 50px 0px 50px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #eee;
+}
+
+.category__icon {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.category__title {
+  line-height: 48px;
+  color: #999;
+  margin-bottom: 10px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.category__item {
+  color: #999;
+  padding: 13px 0px 13px 45px;
+  position: relative;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.category__item:before,
+.category__item:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  background: #999;
+}
+
+.category__item:before {
+  top: 50%;
+  width: 31px;
+  height: 1px;
+}
+
+.category__item:after {
+  top: -50%;
+  height: 100%;
+  width: 1px;
+}
+
+.info-page {
+  padding: 28px 29px 40px 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.info-page__btn {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #16afe4;
+}
+
+.info-page__picture {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.info-page__picture img {
+  width: 71px;
+  height: 71px;
+}
+
+.info-page__picture span {
+  display: inline-block;
+  margin-left: 22px;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.info-page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.info-page__item i {
+  margin-right: 18px;
+  color: #16afe4;
+}
+
+.info-page__item:last-child {
+  margin-bottom: 0;
+}
+
+.info-page__text {
+  line-height: 20px;
+  color: #222;
+}
+
+.page {
+  margin-left: 100px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.page._active {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  margin-left: 80px;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
 @media (min-width: 661px) {
   .tablet-header {
     display: none;
@@ -445,6 +624,25 @@ body {
   .sidebar__select:hover {
     background: none;
     border-left: 0;
+  }
+
+  .category__title:hover {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    color: #000;
+  }
+
+  .category__item:hover {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    color: #000;
+  }
+
+  .category__item:hover:before,
+  .category__item:hover:after {
+    background: #000;
   }
 }
 
@@ -594,6 +792,10 @@ body {
     width: 80px;
     opacity: 0;
     visibility: hidden;
+  }
+
+  .page {
+    margin-left: 0;
   }
 }
 

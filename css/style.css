@@ -406,6 +406,20 @@ body {
   color: #fff;
 }
 
+.page-content__row_11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-content__row_11 .page-content__item:first-child {
+  margin-bottom: 60px;
+}
+
 .menu-page {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 290px;
@@ -583,6 +597,26 @@ body {
   width: 100%;
   padding: 32px 59px 49px 30px;
   background: #FAFAFA;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-content__confirm {
+  width: 210px;
+  height: 42px;
+  background: #16afe4;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .page-content__section {
@@ -1042,6 +1076,163 @@ body {
 
 .box-item input {
   width: 300px;
+}
+
+.time-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.time-grid__weekday {
+  line-height: 30px;
+  color: #666;
+  width: 20px;
+  margin-right: 28px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.time-grid__weekday:hover {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #16afe4;
+}
+
+.time-grid__weekday:hover + .time-grid__hours .time-grid__hour {
+  background: #E7f7fc;
+}
+
+.time-grid__hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.time-grid__hour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.time-grid__hour:last-child {
+  border-right: 1px solid #999;
+}
+
+.time-grid__hour:hover {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  background: #E7F7FC;
+}
+
+.time-grid__hour input {
+  display: none;
+}
+
+.time-grid__hour input + i {
+  display: none;
+  font-size: 16px;
+  color: #16afe4;
+}
+
+.time-grid__hour input:checked + i {
+  display: block;
+}
+
+.time-grid__weekhour {
+  width: 30px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #666666;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.time-grid__weekhour:hover {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #16afe4;
+}
+
+.time-grid__row {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-grid__row_7 .time-grid__hour {
+  border-bottom: 1px solid #999;
+}
+
+.time-grid__row_8 {
+  margin-top: 30px;
+  margin-left: 48px;
+}
+
+.hour00._hovered,
+.hour01._hovered,
+.hour02._hovered,
+.hour03._hovered,
+.hour04._hovered,
+.hour05._hovered,
+.hour06._hovered,
+.hour07._hovered,
+.hour08._hovered,
+.hour09._hovered,
+.hour10._hovered,
+.hour11._hovered,
+.hour12._hovered,
+.hour13._hovered,
+.hour14._hovered,
+.hour15._hovered,
+.hour16._hovered,
+.hour17._hovered,
+.hour18._hovered,
+.hour19._hovered,
+.hour20._hovered,
+.hour21._hovered,
+.hour22._hovered,
+.hour23._hovered {
+  background: #e7f7fc;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .wrapper {

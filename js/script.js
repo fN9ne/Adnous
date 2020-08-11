@@ -148,4 +148,11 @@ $(document).ready(function(){
 	$('.manually-keywords__reset').click(function(){
 		$('.manKeyWordsInp').val('')
 	})
+	//
+	$('._hideable_1').click(function(){
+		$('.box-hideable_1').toggleClass('_active')
+	})
+	$('._hideable_2').click(function(){
+		$('.box-hideable_2').toggleClass('_active')
+	})
 })

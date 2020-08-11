@@ -1488,6 +1488,66 @@ body {
   cursor: pointer;
 }
 
+.iib span {
+  color: #222;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.iib {
+  margin-bottom: 20px;
+}
+
+.page-content__row_16 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-content__row_16 .item-content__title {
+  line-height: 25px;
+}
+
+.page-content__row_16 .item-content:first-child {
+  margin-bottom: 50px;
+}
+
+.page-content__row_16 .item-content__input {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.page-content__row_16 .item-content__input input {
+  width: 886px;
+  padding-left: 200px;
+}
+
+.page-content__row_16 .item-content__input .item-content__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f8f8f9;
+  border: 1px solid #eee;
+  color: #999;
+}
+
 .utm-add {
   background: #F9F9F9;
 }
@@ -2364,6 +2424,12 @@ input:focus::placeholder {
   }
 }
 
+@media (max-width: 1430px) {
+  .page-content__row_16 .item-content__input input {
+    width: 500px;
+  }
+}
+
 @media (max-width: 1420px) {
   .page-content__row_6 select {
     width: 500px;
@@ -2615,6 +2681,10 @@ input:focus::placeholder {
 
   .title-content {
     padding: 15px 20px 15px 30px;
+  }
+
+  .page-content__row_16 .item-content__input input {
+    width: 350px;
   }
 
   .le-title {
@@ -2958,6 +3028,19 @@ input:focus::placeholder {
 
   .row-utm:hover .row-utm__close {
     display: none;
+  }
+
+  .page-content__row_16 .item-content__input input {
+    padding-left: 150px;
+  }
+
+  .page-content__row_16 .item-content__input input {
+    width: 260px;
+  }
+
+  .page-content__row_16 .item-content__input .item-content__label {
+    width: 130px;
+    letter-spacing: -.04em;
   }
 
   .le-title {

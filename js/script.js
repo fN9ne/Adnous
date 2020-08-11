@@ -171,6 +171,9 @@ $(document).ready(function(){
 	$('._hideable_5').click(function(){
 		$('.box-hideable_5').toggleClass('_active')
 	})
+	$('._hideable_6').click(function(){
+		$('.box-hideable_6').toggleClass('_active')
+	})
 	//
 	$('.clickable').click(function(){
 		$('.sidebar__box').toggleClass('_active')

@@ -1711,8 +1711,11 @@ body {
 }
 
 .wrapper {
-  overflow: hidden;
   position: relative;
+}
+
+.wrapper.noovh .sidebar {
+  height: 100vh;
 }
 
 .page {

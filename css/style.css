@@ -409,6 +409,10 @@ body {
   transition: 0.3s all ease;
 }
 
+.block-sidebar__row._default {
+  background-color: transparent !important;
+}
+
 .block-sidebar__icon {
   margin-right: 15px;
   font-size: 16px;
@@ -1865,6 +1869,11 @@ input:focus::placeholder {
 
   .block-sidebar__content._768 {
     display: none;
+  }
+
+  .block-sidebar__row._default:hover {
+    background: #404960 !important;
+    border-left: 3px solid #16afe4;
   }
 
   .block-sidebar__row:hover {

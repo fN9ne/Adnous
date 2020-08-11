@@ -141,4 +141,7 @@ $(document).ready(function(){
 	$('.wh22').mouseleave(function(){$('.hour22').removeClass('_hovered')})
 	$('.wh23').mouseleave(function(){$('.hour23').removeClass('_hovered')})
 	//
+	$('.info-lelp__close').click(function(){
+		$('.info-lelp').toggleClass('_disable')
+	})
 })

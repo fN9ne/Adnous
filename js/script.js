@@ -144,4 +144,8 @@ $(document).ready(function(){
 	$('.info-lelp__close').click(function(){
 		$('.info-lelp').toggleClass('_disable')
 	})
+	//
+	$('.manually-keywords__reset').click(function(){
+		$('.manKeyWordsInp').val('')
+	})
 })

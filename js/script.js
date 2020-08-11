@@ -162,6 +162,15 @@ $(document).ready(function(){
 	$('._hideable_2').click(function(){
 		$('.box-hideable_2').toggleClass('_active')
 	})
+	$('._hideable_3').click(function(){
+		$('.box-hideable_3').toggleClass('_active')
+	})
+	$('._hideable_4').click(function(){
+		$('.box-hideable_4').toggleClass('_active')
+	})
+	$('._hideable_5').click(function(){
+		$('.box-hideable_5').toggleClass('_active')
+	})
 	//
 	$('.clickable').click(function(){
 		$('.sidebar__box').toggleClass('_active')

@@ -1293,6 +1293,30 @@ body {
   transition: 0.3s all ease;
 }
 
+.mp-title {
+  text-align: center;
+  max-width: 720px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 56px;
+}
+
+.btn-create {
+  padding: 0px 45px;
+  background: #16afe4;
+  border-radius: 23.5px;
+  height: 47px;
+  color: #fff;
+  letter-spacing: .02em;
+}
+
+.le-title {
+  max-width: 800px;
+  margin-bottom: 56px;
+}
+
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -1303,6 +1327,36 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  overflow: hidden;
+}
+
+.page.mainPage .item-sidebar__icon_1 {
+  color: #16AFE4;
+}
+
+.page.lePage .item-sidebar__icon_5 {
+  color: #16afe4;
+}
+
+.page.rkPage .item-sidebar__icon_1 {
+  color: #16AFE4;
+}
+
+.page.basePage {
+  width: 100%;
+  height: 92vh;
+}
+
+.page.basePage .sidebar {
+  position: relative;
+}
+
+.page__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  z-index: -1;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -1323,6 +1377,33 @@ input:focus::-ms-input-placeholder {
 
 input:focus::placeholder {
   font-size: 0;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #222;
 }
 
 @media (min-width: 769px) {
@@ -1371,11 +1452,6 @@ input:focus::placeholder {
     transition: 0.3s all ease;
     background: #2CB5E5;
     border-left: 3px solid #fff;
-  }
-
-  .sidebar__select:hover {
-    background: none;
-    border-left: 0;
   }
 
   .category__title:hover {
@@ -1595,6 +1671,15 @@ input:focus::placeholder {
   .title-content {
     padding: 15px 20px 15px 30px;
   }
+
+  .mp-title {
+    font-size: 25px;
+    line-height: 33.33333px;
+  }
+
+  .le-title {
+    max-width: 428px;
+  }
 }
 
 @media (max-width: 970px) {
@@ -1734,6 +1819,20 @@ input:focus::placeholder {
   .item-content__box {
     margin-right: 50px;
   }
+
+  .le-title {
+    font-size: 25px;
+  }
+
+  .page.basePage .sidebar {
+    position: absolute;
+  }
+}
+
+@media (max-width: 660px) {
+  .mp-title {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 435px) {
@@ -1773,6 +1872,16 @@ input:focus::placeholder {
 
   .box-item input {
     width: 260px;
+  }
+
+  .mp-title {
+    font-size: 20px;
+    line-height: 26.66667px;
+  }
+
+  .le-title {
+    font-size: 18px;
+    max-width: 288px;
   }
 }
 

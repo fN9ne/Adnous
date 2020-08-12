@@ -3429,7 +3429,7 @@ body._lock {
 }
 
 .page.lePage {
-  padding-left: 100px;
+  padding-left: 290px;
 }
 
 .page.basePage {
@@ -3463,6 +3463,24 @@ input:focus::placeholder {
 }
 
 .lolip .iconPagePic_5 {
+  color: #16afe4;
+}
+
+.acc .PagePic_6 {
+  background: #404960;
+  border-left: 3px solid #16afe4;
+}
+
+.acc .iconPagePic_6 {
+  color: #16afe4;
+}
+
+.doc .PagePic_7 {
+  background: #404960;
+  border-left: 3px solid #16afe4;
+}
+
+.doc .iconPagePic_7 {
   color: #16afe4;
 }
 
@@ -3504,6 +3522,10 @@ input:focus::placeholder {
 
 .btn-cocreate {
   padding: 0px 30px;
+}
+
+.btn-large {
+  padding: 0px 40px;
 }
 
 @media (min-width: 769px) {

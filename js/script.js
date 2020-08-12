@@ -53,6 +53,9 @@ $(document).ready(function(){
 	if ($(window).width() <= 768) {
 		$('.title-sidebar').removeAttr('href')
 	}
+	if ($(window).height() > 1080) {
+		$('.lelp-content').addClass('hdd')
+	}
 	//
 		$('.title-sidebar-opn_5').click(function(){
 			$('.content-sidebar-opn_5').toggleClass('_active')

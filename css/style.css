@@ -1882,6 +1882,9 @@ body._lock {
   width: 100%;
   padding: 30px 60px 60px 30px;
   background: #FAFAFA;
+}
+
+.lelp-content.hdd {
   height: 100vh;
 }
 
@@ -3086,6 +3089,7 @@ body._lock {
 .wrapper {
   overflow-x: hidden;
   position: relative;
+  height: 100vh;
 }
 
 .wrapper.noovh {

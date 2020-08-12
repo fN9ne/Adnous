@@ -3038,6 +3038,19 @@ input:focus::placeholder {
   font-size: 0;
 }
 
+.lolip .title-sidebar_5 i {
+  color: #fff !important;
+}
+
+.lolip .block-sidebar__row._active {
+  background: #404960 !important;
+  border-left: 3px solid #16afe4;
+}
+
+.lolip .block-sidebar__row._active i {
+  color: #16afe4 !important;
+}
+
 .page-container {
   width: 100%;
   height: 100%;

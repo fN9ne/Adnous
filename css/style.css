@@ -308,7 +308,7 @@ body._lock {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 .sidebar__container {
@@ -473,7 +473,7 @@ body._lock {
   width: 290px;
   background: #2D3750;
   height: 100vh;
-  z-index: 2;
+  z-index: 10;
 }
 
 .opn-sidebar__container {
@@ -3159,6 +3159,15 @@ input:focus::placeholder {
 }
 
 .lolip .iconPagePic_5 {
+  color: #16afe4;
+}
+
+.mp .PagePic_1 {
+  background: #404960;
+  border-left: 3px solid #16afe4;
+}
+
+.mp .iconPagePic_1 {
   color: #16afe4;
 }
 

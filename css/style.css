@@ -2978,7 +2978,7 @@ body._lock {
 }
 
 .wrapper.noovh {
-  overflow: auto;
+  overflow: none;
 }
 
 .wrapper.noovh .sidebar {
@@ -4148,7 +4148,7 @@ input:focus::placeholder {
   }
 
   .page.basePage {
-    height: 90vh;
+    height: 95vh;
   }
 }
 

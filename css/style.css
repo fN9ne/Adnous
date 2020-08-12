@@ -308,7 +308,7 @@ body._lock {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 19;
 }
 
 .sidebar__container {
@@ -473,7 +473,7 @@ body._lock {
   width: 290px;
   background: #2D3750;
   height: 100%;
-  z-index: 10;
+  z-index: 19;
 }
 
 .opn-sidebar__container {

@@ -304,7 +304,7 @@ body._lock {
 .sidebar {
   width: 100px;
   background: #2D3750;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -472,7 +472,7 @@ body._lock {
   top: 0;
   width: 290px;
   background: #2D3750;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
 }
 
@@ -1882,6 +1882,7 @@ body._lock {
   width: 100%;
   padding: 30px 60px 60px 30px;
   background: #FAFAFA;
+  height: 100vh;
 }
 
 .lelp-content.sidebarPlace {
@@ -3082,13 +3083,8 @@ body._lock {
   padding: 0px 20px;
 }
 
-.page {
-  width: 100vw;
-  height: 100vh;
-}
-
 .wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 

@@ -22,11 +22,9 @@ function ibg(){
 }
 ibg();
 $(document).ready(function(){
-	$('.tablet-header').click(function(){
-		$('.menu-page').toggleClass('_active')
-	})
 	$('.category__item').click(function(){
 		$('.menu-page').removeClass('_active')
+		wr.removeClass('_lock')
 	})
 	//
 	$('.category__title_1').click(function(){
@@ -39,10 +37,79 @@ $(document).ready(function(){
 		$('.category__box_3').toggleClass('_active')
 	})
 	//
+	const issc1 = $('.item-sui-sidebar_column-1')
+	const issc2 = $('.item-sui-sidebar_column-2')
+	const issc3 = $('.item-sui-sidebar_column-3')
+	const tss1 = $('.title-sui-sidebar_1')
+	const tss2 = $('.title-sui-sidebar_2')
+	const tss3 = $('.title-sui-sidebar_3')
+	const tss = $('.title-sui-sidebar')
+	const ssc1 = $('.sui-sidebar__content_1')
+	const ssc2 = $('.sui-sidebar__content_2')
+	const ssc3 = $('.sui-sidebar__content_3')
+	//
+	issc1.mouseover(function(){tss1.addClass('_active')})
+	issc1.mouseleave(function(){tss1.removeClass('_active')})
+	issc2.mouseover(function(){tss2.addClass('_active')})
+	issc2.mouseleave(function(){tss2.removeClass('_active')})
+	issc3.mouseover(function(){tss3.addClass('_active')})
+	issc3.mouseleave(function(){tss3.removeClass('_active')})
+	// //
+	if ($(window).width() <= 768) {
+		tss.removeAttr('href')
+		tss1.click(function(){
+			$(this).toggleClass('_active')
+			ssc1.toggleClass('_active')
+		})
+		tss2.click(function(){
+			$(this).toggleClass('_active')
+			ssc2.toggleClass('_active')
+		})
+		tss3.click(function(){
+			$(this).toggleClass('_active')
+			ssc3.toggleClass('_active')
+		})
+	}
+	// === === === === === === === === ===
+	const wr = $('.wrapper')
+	// === === === === === === === === ===
 	$('.header__burger').click(function(){
 		$('.sidebar').toggleClass('_active');
+		$('.sui-sidebar').removeClass('_active')
+		if (!wr.hasClass('_lock', '_pre-lock')) {
+			wr.addClass('_lock')
+			$('.area').addClass('_active')
+			wr.addClass('_pre-lock')
+		} else if(wr.hasClass('_pre-lock')) {
+			wr.removeClass('_lock')
+			wr.removeClass('_pre-lock')
+			$('.area').removeClass('_active')
+		}
+		if (wr.hasClass('_lock')) {
+			wr.addClass('_pre-lock')
+			$('.area').addClass('_active')
+		}
 	})
-	//
+	$('.area').click(function(){
+		$('.sidebar').removeClass('_active')
+		$('.sui-sidebar').removeClass('_active')
+		wr.removeClass('_lock')
+		wr.removeClass('_pre-lock')
+		$('.area').removeClass('_active')
+	})
+	// -- -- -- -- -- -- -- -- -- -- -- --
+	$('.tablet-header').click(function(){
+		$('.sui-sidebar').toggleClass('_active')
+		$('.sidebar').removeClass('_active')
+		if (wr.hasClass('_pre-lock')) {
+			wr.removeClass('_pre-lock')
+		} 
+		else if (!wr.hasClass('_pre-lock')) {
+			wr.toggleClass('_lock')
+			$('.area').toggleClass('_active')
+		}
+	})
+	// === === === === === === === === ===
 	$('.header__user').click(function(){
 		$('.dropdown-user').toggleClass('_active')
 	})
@@ -68,11 +135,17 @@ $(document).ready(function(){
 			$('.content-sidebar-opn_5').toggleClass('_active')
 			$('.opn-sidebar__item_5').toggleClass('_active')
 			$('.title-sidebar-opn__angle_1').toggleClass('_active')
+			$('.content-sidebar-opn_6').removeClass('_active')
+			$('.opn-sidebar__item_6').removeClass('_active')
+			$('.title-sidebar-opn__angle_2').removeClass('_active')
 		})
 		$('.title-sidebar-opn_6').click(function(){
 			$('.content-sidebar-opn_6').toggleClass('_active')
 			$('.opn-sidebar__item_6').toggleClass('_active')
 			$('.title-sidebar-opn__angle_2').toggleClass('_active')
+			$('.content-sidebar-opn_5').removeClass('_active')
+			$('.opn-sidebar__item_5').removeClass('_active')
+			$('.title-sidebar-opn__angle_1').removeClass('_active')
 		})
 	//
 	if ($(window).width() <= 768) {
@@ -80,11 +153,17 @@ $(document).ready(function(){
 			$('.dropdown-sidebar_5').toggleClass('_active')
 			$('.sidebar__item_5').toggleClass('_active')
 			$('.title-sidebar__angle_1').toggleClass('_active')
+			$('.sidebar__item_6').removeClass('_active')
+			$('.dropdown-sidebar_6').removeClass('_active')
+			$('.title-sidebar__angle_2').removeClass('_active')
 		})
 		$('.title-sidebar_6').click(function(){
 			$('.sidebar__item_6').toggleClass('_active')
 			$('.dropdown-sidebar_6').toggleClass('_active')
 			$('.title-sidebar__angle_2').toggleClass('_active')
+			$('.dropdown-sidebar_5').removeClass('_active')
+			$('.sidebar__item_5').removeClass('_active')
+			$('.title-sidebar__angle_1').removeClass('_active')
 		})
 	}
 	$('.wh00').mouseover(function(){$('.hour00').addClass('_hovered')})

@@ -237,10 +237,62 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .header__user i {
   margin-right: 12px;
+}
+
+.header__box {
+  position: relative;
+}
+
+.dropdown-user {
+  position: absolute;
+  background: #F9F9F9;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  bottom: -8px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.dropdown-user._active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.dropdown-user__close {
+  padding: 15px 20px;
+  display: inline-block;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.dropdown-user__close i {
+  margin-right: 15px;
+  font-size: 16px;
 }
 
 .btns-header {
@@ -328,6 +380,14 @@ body._lock {
 
 .sidebar__item_5._active {
   background: #2B3347;
+}
+
+.sidebar__item_6 {
+  display: none;
+}
+
+.sidebar__item_6._active {
+  background: #2b3347;
 }
 
 .title-sidebar {
@@ -495,6 +555,10 @@ body._lock {
 
 .opn-sidebar__item._active {
   background: #2B3347;
+}
+
+.opn-sidebar__item_6 {
+  display: none;
 }
 
 .title-sidebar-opn {
@@ -3658,6 +3722,13 @@ input:focus::placeholder {
 }
 
 @media (min-width: 769px) {
+  .dropdown-user__close:hover {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    background: #f1f1f1;
+  }
+
   .tablet-header {
     display: none;
   }
@@ -4628,6 +4699,10 @@ input:focus::placeholder {
     visibility: visible;
   }
 
+  .sidebar__item_6 {
+    display: block;
+  }
+
   .title-sidebar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -4658,6 +4733,10 @@ input:focus::placeholder {
   .opn-sidebar._active {
     opacity: 1;
     visibility: visible;
+  }
+
+  .opn-sidebar__item_6 {
+    display: block;
   }
 
   .menu-page {

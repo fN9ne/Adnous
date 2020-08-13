@@ -360,7 +360,6 @@ body._lock {
 }
 
 .sidebar {
-  overflow: auto;
   padding-bottom: 105px;
   width: 100px;
   background: #2D3750;
@@ -4029,6 +4028,7 @@ input:focus::placeholder {
   .title-sidebar:hover + .content-sidebar {
     opacity: 1;
     visibility: visible;
+    z-index: 5;
   }
 
   .content-sidebar:hover {
@@ -5021,6 +5021,7 @@ input:focus::placeholder {
 
   .sidebar {
     top: 75px;
+    overflow: auto;
   }
 
   .sidebar {

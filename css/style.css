@@ -4466,8 +4466,20 @@ body._lock {
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 66%;
-          flex: 1 1 66%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.pages-cl__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .pages-cl__arrows {
@@ -4550,8 +4562,8 @@ body._lock {
 
 .elements-cl {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 33%;
-          flex: 1 1 33%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -4985,6 +4997,7 @@ body._lock {
 }
 
 .table {
+  margin-top: 30px;
   background: #fff;
   border: 1px solid #eee;
   border-top: none;
@@ -7039,6 +7052,10 @@ input:focus::placeholder {
   .stCo {
     margin: 75px 0px 0px 0px;
     padding: 15px;
+  }
+
+  .stCo__company-box {
+    margin-bottom: 30px;
   }
 
   .row-main-company__name {

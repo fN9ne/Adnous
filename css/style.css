@@ -5143,6 +5143,7 @@ body._lock {
 .mobile-table__link {
   color: #0066c0;
   text-align: center;
+  line-height: 20px;
 }
 
 .mobile-table__title {

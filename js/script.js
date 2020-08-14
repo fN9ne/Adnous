@@ -326,6 +326,10 @@ $(document).ready(function(){
 		$('.preview-block__btn_1').removeClass('_active')
 	})
 	//
+	$('.sign__close').click(function(){
+		$('.sign').addClass('_disable')
+	})
+	//
 	$('.btn-header-cl_1').click(function(){
 		$('.content-header-cl_1').toggleClass('_active')
 		$('.area').toggleClass('_active')

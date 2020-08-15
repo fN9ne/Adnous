@@ -4352,6 +4352,9 @@ body._lock {
 }
 
 .main-cl__name {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 15.7%;
 }
 
@@ -4361,6 +4364,9 @@ body._lock {
 }
 
 .main-cl__type {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 12.6%;
   color: #666;
   text-align: left;

@@ -4874,7 +4874,7 @@ body._lock {
 
 .top-company-box__number {
   font-size: 22px;
-  color: #16afe4;
+  color: #666;
   font-weight: 600;
   margin-right: 15px;
   line-height: 1.2;
@@ -5426,6 +5426,10 @@ body._lock {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.dom .table .table__item span {
+  text-align: left;
 }
 
 .dom .table .table__title {
@@ -6081,6 +6085,20 @@ input:focus::placeholder {
   }
 }
 
+@media (max-width: 1565px) {
+  .dom .table .table__header {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 23fr 23fr 32fr 34fr 40fr;
+        grid-template: 1fr / 23fr 23fr 32fr 34fr 40fr;
+  }
+
+  .dom .table .table__row {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 23fr 23fr 32fr 34fr 40fr;
+        grid-template: 1fr / 23fr 23fr 32fr 34fr 40fr;
+  }
+}
+
 @media (max-width: 1550px) {
   .page-content__row {
     margin-bottom: 15px;
@@ -6199,6 +6217,14 @@ input:focus::placeholder {
   .row-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .dom .table .table__item {
+    padding: 10px;
+  }
+
+  .dom .table .table__title {
+    padding: 10px;
   }
 }
 
@@ -6726,7 +6752,7 @@ input:focus::placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 20px 10px;
   }
 
   ._pic {

@@ -3951,7 +3951,7 @@ body._lock {
 }
 
 .header-cl__budget {
-  width: 11.5%;
+  width: 14.5%;
 }
 
 .header-cl__status {
@@ -4356,7 +4356,7 @@ body._lock {
 .main-cl__type {
   width: 12.6%;
   color: #666;
-  text-align: center;
+  text-align: left;
   line-height: 24px;
 }
 
@@ -4366,7 +4366,7 @@ body._lock {
 }
 
 .main-cl__budget {
-  width: 11.5%;
+  width: 14.5%;
   color: #666;
 }
 
@@ -4379,7 +4379,7 @@ body._lock {
 }
 
 .name-main-cl__link {
-  text-align: center;
+  text-align: left;
   line-height: 24px;
   color: #0066c0;
 }
@@ -4556,6 +4556,11 @@ body._lock {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
+}
+
+.pages-cl__item_1 a {
+  background: #16afe4;
+  color: #fff;
 }
 
 .elements-cl {
@@ -5115,6 +5120,10 @@ body._lock {
           justify-content: center;
 }
 
+.table-pages._nmt {
+  margin-top: 0;
+}
+
 .mobile-table {
   display: none;
   background: #fff;
@@ -5182,6 +5191,10 @@ body._lock {
 
 .mobile-table__title span {
   text-align: left;
+}
+
+.status {
+  width: 100px;
 }
 
 .finance {
@@ -5327,6 +5340,69 @@ body._lock {
 
 .link {
   color: #0066c0;
+}
+
+.dom .table .table__header {
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 24fr 25fr 30fr 34fr 40fr;
+      grid-template: 1fr / 24fr 25fr 30fr 34fr 40fr;
+}
+
+.dom .table .table__row {
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 24fr 25fr 30fr 34fr 40fr;
+      grid-template: 1fr / 24fr 25fr 30fr 34fr 40fr;
+}
+
+.circle {
+  background: #16afe4;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+}
+
+.circle i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.code-watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.code-watch .link {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.sign__text .fa-caret-right {
+  margin-right: 5px;
+  color: #16afe4;
+}
+
+.exclamation {
+  color: #16afe4;
+  font-size: 20px;
+  margin-right: 5px;
+  font-weight: 600;
 }
 
 .area {

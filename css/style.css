@@ -3983,7 +3983,8 @@ body._lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .btn-header-cl {
@@ -6275,6 +6276,12 @@ input:focus::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .pages-cl__container {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
   }
 }
 

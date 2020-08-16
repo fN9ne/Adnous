@@ -5814,6 +5814,112 @@ body._lock {
   margin-right: 50px;
 }
 
+.leaccount .cl__pages {
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leaccount .cl__pages .pages-cl__container {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+.leaccount .item-cl-mobile__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.leaccount .item-cl-mobile__title {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.leaccount .item-cl-mobile__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leaccount .item-cl-mobile__content p {
+  line-height: 20px;
+}
+
+.leaccount .item-cl-mobile__bottom {
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 20px 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.leaccount .header-cl__number,
+.leaccount .main-cl__number {
+  width: 15%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.leaccount .header-cl__date,
+.leaccount .main-cl__date {
+  width: 18%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leaccount .header-cl__name,
+.leaccount .main-cl__name {
+  width: 16%;
+  color: #666;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.leaccount .header-cl__click,
+.leaccount .main-cl__click {
+  width: 14%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.leaccount .header-cl__status,
+.leaccount .main-cl__status {
+  width: 18%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.leaccount .header-cl__toggle,
+.leaccount .main-cl__toggle {
+  width: 18%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .area {
   width: 100%;
   height: 100%;
@@ -5909,6 +6015,15 @@ input:focus::placeholder {
 }
 
 .dom .iconPagePic_3 {
+  color: #16afe4;
+}
+
+.leaccount .PagePic_6 {
+  background: #404960;
+  border-left: 3px solid #16afe4;
+}
+
+.leaccount .iconPagePic_6 {
   color: #16afe4;
 }
 

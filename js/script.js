@@ -139,22 +139,22 @@ $(document).ready(function(){
 		$('.lelp-content').addClass('hdd')
 	}
 	//
-		$('.title-sidebar-opn_5').click(function(){
-			$('.content-sidebar-opn_5').toggleClass('_active')
-			$('.opn-sidebar__item_5').toggleClass('_active')
-			$('.title-sidebar-opn__angle_1').toggleClass('_active')
-			$('.content-sidebar-opn_6').removeClass('_active')
-			$('.opn-sidebar__item_6').removeClass('_active')
-			$('.title-sidebar-opn__angle_2').removeClass('_active')
-		})
-		$('.title-sidebar-opn_6').click(function(){
-			$('.content-sidebar-opn_6').toggleClass('_active')
-			$('.opn-sidebar__item_6').toggleClass('_active')
-			$('.title-sidebar-opn__angle_2').toggleClass('_active')
-			$('.content-sidebar-opn_5').removeClass('_active')
-			$('.opn-sidebar__item_5').removeClass('_active')
-			$('.title-sidebar-opn__angle_1').removeClass('_active')
-		})
+	$('.title-sidebar-opn_5').click(function(){
+		$('.content-sidebar-opn_5').toggleClass('_active')
+		$('.opn-sidebar__item_5').toggleClass('_active')
+		$('.title-sidebar-opn__angle_1').toggleClass('_active')
+		$('.content-sidebar-opn_6').removeClass('_active')
+		$('.opn-sidebar__item_6').removeClass('_active')
+		$('.title-sidebar-opn__angle_2').removeClass('_active')
+	})
+	$('.title-sidebar-opn_6').click(function(){
+		$('.content-sidebar-opn_6').toggleClass('_active')
+		$('.opn-sidebar__item_6').toggleClass('_active')
+		$('.title-sidebar-opn__angle_2').toggleClass('_active')
+		$('.content-sidebar-opn_5').removeClass('_active')
+		$('.opn-sidebar__item_5').removeClass('_active')
+		$('.title-sidebar-opn__angle_1').removeClass('_active')
+	})
 	//
 	if ($(window).width() <= 768) {
 		$('.title-sidebar_5').click(function(){
@@ -317,6 +317,14 @@ $(document).ready(function(){
 	setInterval(count05, 100)
 	setInterval(count06, 100)
 	//
+	$('#nacc-popup-input').keydown(function(){
+		if ($('#nacc-popup-input').val().length > 0){
+			$(this).addClass('_active')
+		} else {
+			$(this).removeClass('_active')
+		}
+	})
+	//
 	$('.preview-block__btn_1').click(function(){
 		$(this).addClass('_active')
 		$('.preview-block__btn_2').removeClass('_active')
@@ -427,23 +435,23 @@ $(document).ready(function(){
 	})
 })
 const pickr = Pickr.create({
-    el: '.color-picker',
+	el: '.color-picker',
     theme: 'classic', // or 'monolith', or 'nano'
     swatches: [
-        'rgba(244, 67, 54, 1)',
-        'rgba(233, 30, 99, 1)',
-        'rgba(156, 39, 176, 1)',
-        'rgba(103, 58, 183, 1)',
-        'rgba(63, 81, 181, 1)',
-        'rgba(33, 150, 243, 1)',
-        'rgba(3, 169, 244, 1)',
-        'rgba(0, 188, 212, 1)',
-        'rgba(0, 150, 136, 1)',
-        'rgba(76, 175, 80, 1)',
-        'rgba(139, 195, 74, 1)',
-        'rgba(205, 220, 57, 1)',
-        'rgba(255, 235, 59, 1)',
-        'rgba(255, 193, 7, 1)'
+    'rgba(244, 67, 54, 1)',
+    'rgba(233, 30, 99, 1)',
+    'rgba(156, 39, 176, 1)',
+    'rgba(103, 58, 183, 1)',
+    'rgba(63, 81, 181, 1)',
+    'rgba(33, 150, 243, 1)',
+    'rgba(3, 169, 244, 1)',
+    'rgba(0, 188, 212, 1)',
+    'rgba(0, 150, 136, 1)',
+    'rgba(76, 175, 80, 1)',
+    'rgba(139, 195, 74, 1)',
+    'rgba(205, 220, 57, 1)',
+    'rgba(255, 235, 59, 1)',
+    'rgba(255, 193, 7, 1)'
     ],
     components: {
         // Main components
@@ -452,14 +460,14 @@ const pickr = Pickr.create({
         hue: true,
         // Input / output Options
         interaction: {
-            hex: true,
-            rgba: true,
-            hsla: true,
-            hsva: true,
-            cmyk: true,
-            input: true,
-            clear: true,
-            save: true
+        	hex: true,
+        	rgba: true,
+        	hsla: true,
+        	hsva: true,
+        	cmyk: true,
+        	input: true,
+        	clear: true,
+        	save: true
         }
     }
 });

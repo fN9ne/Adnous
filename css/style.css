@@ -1910,7 +1910,7 @@ body._lock {
 }
 
 .item-content__checker input:checked + label {
-  background: url("../img/check-circle-regular.svg") center left no-repeat;
+  background: url("../img/checked.svg") center left no-repeat;
 }
 
 .item-content__demography {
@@ -1932,6 +1932,10 @@ body._lock {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background: url("../img/circle-regular.svg") center left no-repeat;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
 }
 
 .mp-title {
@@ -6366,6 +6370,13 @@ input:focus::placeholder {
   padding-left: 30px;
 }
 
+input,
+select,
+option {
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
 @media (min-width: 769px) {
   .dropdown-user__close:hover {
     -webkit-transition: 0.3s all ease;
@@ -6448,6 +6459,10 @@ input:focus::placeholder {
 
   .category__title .category__dropdown-arrow {
     display: none;
+  }
+
+  .male:hover {
+    background: url("../img/checked-op.svg") center left no-repeat;
   }
 
   .logoFileAction_1:hover {
@@ -8166,6 +8181,10 @@ input:focus::placeholder {
     margin-right: 50px;
   }
 
+  .row-content .item-content_mtt {
+    margin-top: 0;
+  }
+
   .page-container {
     background: url("../img/mainPage/mainPageBg.svg") center center/250% auto no-repeat;
   }
@@ -8228,10 +8247,16 @@ input:focus::placeholder {
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     transition: 0.3s all ease;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
   }
 
   .sui-sidebar._active {
     opacity: 1;
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
     visibility: visible;
   }
 
@@ -8436,6 +8461,12 @@ input:focus::placeholder {
 
   .nacc-popup__input {
     margin: 0px 0px 30px 0px;
+  }
+}
+
+@media (max-width: 541px) {
+  .row-content .item-content_mtt {
+    margin-top: 10px;
   }
 }
 
